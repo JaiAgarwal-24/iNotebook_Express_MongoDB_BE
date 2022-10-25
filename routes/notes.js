@@ -60,7 +60,7 @@ router.put('/updatenote/:id', fetchuser, async (req, res) => {
         const newNote = {};
 
         if (title) { newNote.title = title };
-        if (description) { newNote.descripton = description };
+        if (description) { newNote.description = description };
         if (tag) { newNote.tag = tag };
 
         // Find the note to be updated and update it
